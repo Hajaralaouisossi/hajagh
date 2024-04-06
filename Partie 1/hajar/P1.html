@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lampe Digitale</title>
+    <link rel="stylesheet" href="SSS.css">
+</head>
+<body>
+    <div class="container">
+        <img class="lamp" id="lamp" src="of.png">
+        <button id="toggleButton" onclick="toggleLamp()">
+            <img id="my-photo" src="bbb.jpg" width="90" height="90">
+        </button>
+    </div>
+    <audio id="lok" src="lak.mp3"></audio>
+    <script>
+        function toggleLamp() {
+            const lamp = document.getElementById('lamp');
+            const current = lamp.src;
+            const lampOff = 'of.png';
+            const lampOn = 'on.png';
+            
+            playClickSound();
+
+            if (current.includes(lampOff)) {
+                lamp.src = lampOn;
+            } else {
+                lamp.src = lampOff;
+            }
+        }
+
+        function playClickSound() {
+            const cs = document.getElementById('lok');
+            cs.play();
+        }
+    </script>
+</body>
+</html>

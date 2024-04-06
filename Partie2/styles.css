@@ -1,0 +1,102 @@
+/* Styles pour la modal */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0,0,0,0.4);
+}
+
+.modal-content {
+    background-color: #fefefe;
+    margin: 10% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+}
+
+.close {
+    color: #aaaaaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+/* Styles pour les sections */
+.section {
+    display: none;
+    padding: 20px;
+}
+
+/* Animation pour afficher les sections */
+.section.show {
+    display: block;
+    animation: fadeIn 0.5s ease-in-out;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+.button {
+    background-color: #af4ca3;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    transition-duration: 0.4s;
+}
+
+
+/*CV*/
+
+body {
+    font-family: Arial, sans-serif;
+   }
+   
+   h2 {
+    font-size: 2em;
+    color: #333;
+   }
+   
+   h3 {
+    font-size: 1.5em;
+    color: #666;
+   }
+   
+   p {
+    font-size: 1em;
+    color: #333;
+   }
+   
+   .section {
+    margin-bottom: 20px;
+   }
+   
+   .section h3 {
+    margin-top: 0;
+   }
+   
+   .section p {
+    margin-bottom: 0;
+   }
